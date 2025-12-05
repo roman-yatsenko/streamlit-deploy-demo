@@ -2,6 +2,8 @@ import pickle
 
 import streamlit as st
 
+st.header("Streamlit ML Demo")
+
 with open('rfc_model.pickle', 'rb') as rfc_file:
     rfc = pickle.load(rfc_file) 
 with open('output.pickle', 'rb') as output_file:
